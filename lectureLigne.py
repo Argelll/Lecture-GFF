@@ -18,5 +18,5 @@ for ligne in toutesLignes :
   except :
     ("pas cette ligne")
   print ("on y passe")
-  for genes in listeGene:
-    print (genes)
+for genes in listeGene:
+  print (genes)
