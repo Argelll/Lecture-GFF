@@ -12,5 +12,10 @@ class Gene:
     self.brin=brin
     self.phase=phase
     self.attributs=attributs
+   
+  def __str__(self):
+    return self.sequence+', '+self.source+', '+self.element+', '+self.debut+', '+self.fin+', '+self.score+', '+self.brin+', '+self.phase+', '+self.attributs
+  
+  
   
   
