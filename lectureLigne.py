@@ -2,8 +2,8 @@
 # -*- coding:utf-8 -*-
 
 import sys
-from LectureFichier.py import *
-from ClassGene.py import *
+from LectureFichier import *
+from ClassGene import *
 
 nomFichier = sys.argv[0]
 
