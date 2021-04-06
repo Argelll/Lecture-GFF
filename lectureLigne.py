@@ -9,8 +9,7 @@ nomFichier = sys.argv[0]
 
 fichier = Files(nomFichier)
 listeGene=[]
-fichierEntier=fichier.Lecture()
-toutesLignes = fichierEntier.split("\n")
+toutesLignes=fichier.Lecture()
 for ligne in toutesLignes :
   position=ligne.split("\t")
   unGene= Gene(position[0],position[1],position[2],position[3],position[4],position[5],position[6],position[7])
