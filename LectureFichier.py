@@ -19,7 +19,8 @@ class Files(object):
       printf("un des fichiers proposés n'es pas en .gz ou .gzip")    
     
     fichier=open(fp,"r")
-    fichier_entier = fichier.read()
-    return fichier_entier
+    fichierEntier = fichier.read()
+    fichierDecoupe=fichierEntier.split("\n")
+    return fichierDecoupe
     fp.close()
   
