@@ -13,6 +13,8 @@ class Files(object):
     try:
       if self.File.lower().endswith(('.gz', '.gzip')):
         fp = gzip.open(self.File)
+      else: 
+        fp=self.File
     except:
       printf("un des fichiers proposés n'es pas en .gz ou .gzip")    
     
