@@ -9,7 +9,7 @@ nomFichier = sys.argv[0]
 
 fichier = Files(nomFichier)
 listeGene=[]
-fichierEntier=Lecture(fichier)
+fichierEntier=fichier.Lecture()
 toutesLignes = fichierEntier.split("\n")
 for ligne in toutesLignes :
   position=ligne.split("\t")
