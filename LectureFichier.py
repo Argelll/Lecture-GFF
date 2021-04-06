@@ -18,6 +18,6 @@ class Files(object):
     
     for line in enumerate(fp):
       line = line.decode()
-      yield line
+      return line
     fp.close()
   
