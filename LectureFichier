@@ -6,6 +6,7 @@ import sys
 import gzip
 import logging
 
+#Files hérite de la classe object
 class Files(object):
   def __init__(self, File):
     self._fos = File
@@ -17,9 +18,8 @@ class Files(object):
     except:
       printf("un des fichiers proposés n'es pas en .gz ou .gzip")    
     
-    for index, line in enumerate(fp):
-      if index % 50000 == 0 and index != 0:
-        logger.info('working on line NO. of {}: {:,}'.format(os.path.basename(self._fos), index))
-          line = line.decode()
-            yield line
+    for line in enumerate(fp):
+      line = line.decode()
+      yield line
     fp.close()
+  
