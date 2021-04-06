@@ -1,2 +1,12 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+
+import LectureFichier
+
+nomFichier = "GCF_000001405.39_GRCh38.p13_genomic.gff"
+
+fichierLu = Files(nomFichier)
+for lignes in fichierLu
+  ligneCoupee=lignes.split("\t")
+  
+  
