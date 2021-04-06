@@ -9,7 +9,7 @@ class Files(object):
   def __init__(self, File):
     self.File = File
     
-  def __iter__(self):
+  def Lecture(self):
     try:
       if self.File.lower().endswith(('.gz', '.gzip')):
         fp = gzip.open(self.File)
@@ -21,6 +21,5 @@ class Files(object):
     fichier=open(fp,"r")
     fichierEntier = fichier.read()
     fichierDecoupe=fichierEntier.split("\n")
-    return iter(fichierDecoupe)
+    return fichierDecoupe
     fp.close()
-  
