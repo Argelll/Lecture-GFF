@@ -20,6 +20,6 @@ class Files(object):
     
     fichier=open(fp,"r")
     fichier_entier = fichier.read()
-      return fichier_entier
+    return fichier_entier
     fp.close()
   
