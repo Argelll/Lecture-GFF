@@ -17,5 +17,6 @@ for ligne in toutesLignes :
     listeGene.append(unGene)
   except :
     ("pas cette ligne")
+  print ("on y passe")
   for genes in listeGene:
     print (genes)
