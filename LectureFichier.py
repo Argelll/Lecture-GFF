@@ -14,12 +14,12 @@ class Files(object):
       if self.File.lower().endswith(('.gz', '.gzip')):
         fp = gzip.open(self.File)
       else: 
-        fp=self.File
+        fp = self.File
     except:
       printf("un des fichiers proposés n'es pas en .gz ou .gzip")    
     
-    for line in enumerate(fp):
-      line = line.decode()
-      return line
+    fichier=open(fp,"r")
+    fichier_entier = fichier.read()
+      return fichier_entier
     fp.close()
   
