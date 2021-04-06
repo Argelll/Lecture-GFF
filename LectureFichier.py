@@ -21,6 +21,6 @@ class Files(object):
     fichier=open(fp,"r")
     fichierEntier = fichier.read()
     fichierDecoupe=fichierEntier.split("\n")
-    return fichierDecoupe
+    return iter(fichierDecoupe)
     fp.close()
   
