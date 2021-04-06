@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import sys
 import LectureFichier
 import ClassGene
 
-nomFichier = "GCF_000001405.39_GRCh38.p13_genomic.gff"
+nomFichier = sys.argv[0]
 
 fichierLu = Files(nomFichier)
 listeGene=[]
