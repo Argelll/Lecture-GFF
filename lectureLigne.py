@@ -18,5 +18,4 @@ for ligne in toutesLignes :
       nombrePseudogenes=nombrePseudogenes+1
       print (position[2])
   except:
-   print("")
 print (nombrePseudogenes)
