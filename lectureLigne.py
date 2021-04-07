@@ -20,5 +20,5 @@ for ligne in toutesLignes :
   except:
     pass
 nombreTotal=nombreComptes+nombreAutres
-print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s)
+print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s")
 
