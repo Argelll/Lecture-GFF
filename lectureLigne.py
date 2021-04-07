@@ -4,10 +4,8 @@
 import sys
 from LectureFichier import *
 from ClassGene import *
-print ("on y passe")
-nomFichier = sys.argv[1]
-print (nomFichier)
 
+nomFichier = sys.argv[1]
 fichier = Files(nomFichier)
 listeGene=[]
 toutesLignes=fichier.Lecture()
