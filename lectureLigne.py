@@ -15,4 +15,6 @@ for ligne in toutesLignes :
     if (position[2]=="pseudogene"):
       i=i+1
       print (position[2])
+  except:
+   print("")
 print (i)
