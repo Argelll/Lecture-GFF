@@ -19,4 +19,4 @@ for ligne in toutesLignes :
       print (position[2])
   except:
    print("")
-print (i)
+print (nombrePseudogenes)
