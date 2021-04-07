@@ -5,7 +5,8 @@ import sys
 from LectureFichier import *
 from ClassGene import *
 
-nombrePseudogenes=0
+nombreComptes=0
+nombreAutres=0
 typeElement="pseudogene"
 nomFichier = sys.argv[1]
 
@@ -15,8 +16,10 @@ for ligne in toutesLignes :
   position=ligne.split("\t")
   try:
     if (position[2]==typeElement):
-      nombrePseudogenes=nombrePseudogenes+1
+      nombreComptes=nombreComptes+1
       print (position[2])
   except:
-    null
-print (nombrePseudogenes)
+    nombrAutres=nombreAutres+1
+nombreTotal=nombreComptes+nombreAutres
+print ("Il y a "+nombreComptes+" "+typeElement+"s sur "+nombreTotal+" éléments totaux." )
+
