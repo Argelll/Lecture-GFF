@@ -18,8 +18,9 @@ for ligne in toutesLignes :
     if (position[2]==typeElement):
       nombreComptes=nombreComptes+1
       print (position[2])
+    else:
+      nombreTotal=nombreComptes+nombreAutres
   except:
-    nombrAutres=nombreAutres+1
-nombreTotal=nombreComptes+nombreAutres
-print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s sur "+str(nombreTotal)+" éléments totaux." )
+    pass
+print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s sur "+str(nombreTotal)+" elements totaux." )
 
