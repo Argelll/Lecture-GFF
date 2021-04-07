@@ -17,7 +17,6 @@ for ligne in toutesLignes :
   try:
     if (position[2]==typeElement):
       nombreComptes=nombreComptes+1
-      print (position[2])
     else:
       nombreAutres=nombreAutres+nombreAutres+1
   except:
