@@ -18,7 +18,7 @@ for ligne in toutesLignes :
   try:
     if (position[2]==typeElement):
       nombreComptes=nombreComptes+1
-      taille=position[4]-position[3]
+      taille=int(position[4])-int(position[3])
       print(taille)
   except:
     pass
