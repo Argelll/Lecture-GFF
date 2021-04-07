@@ -25,4 +25,5 @@ class Files(object):
     for ligne in fichierDecoupe:
       f.write(ligne)
     return fichierDecoupe
-    fp.close()
+    fichier.close()
+    f.close()
