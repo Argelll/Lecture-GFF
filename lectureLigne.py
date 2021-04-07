@@ -13,5 +13,5 @@ listeGene=[]
 toutesLignes=fichier.Lecture()
 for ligne in toutesLignes :
   position=ligne.split("\t")
-  if (position[2]=="pseudogene")
+  if (position[2]=="pseudogene"):
     print (ligne)
