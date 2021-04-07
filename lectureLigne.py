@@ -19,7 +19,7 @@ for ligne in toutesLignes :
       nombreComptes=nombreComptes+1
       print (position[2])
     else:
-      nombreAutres=nombreAutres+nombreAutres
+      nombreAutres=nombreAutres+nombreAutres+1
   except:
     pass
   nombreTotal=nombreComptes+nombreAutres
