@@ -15,7 +15,7 @@ for ligne in toutesLignes :
   position=ligne.split("\t")
   try:
     if (position[2]=="pseudogene"):
-      i=i+1
+      nombrePseudogenes=nombrePseudogenes+1
       print (position[2])
   except:
    print("")
