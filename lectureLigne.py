@@ -21,5 +21,5 @@ for ligne in toutesLignes :
   except:
     nombrAutres=nombreAutres+1
 nombreTotal=nombreComptes+nombreAutres
-print ("Il y a "+nombreComptes+" "+typeElement+"s sur "+nombreTotal+" éléments totaux." )
+print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s sur "+str(nombreTotal)+" éléments totaux." )
 
