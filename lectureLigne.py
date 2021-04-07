@@ -4,7 +4,7 @@
 import sys
 from LectureFichier import *
 from ClassGene import *
-
+print ("on y passe")
 nomFichier = sys.argv[0]
 
 fichier = Files(nomFichier)
@@ -18,6 +18,6 @@ for ligne in toutesLignes :
     listeGene.append(unGene)
   except :
     print ("pas cette ligne")
-    print ("on y passe")
+    
 for genes in listeGene:
   print (genes)
