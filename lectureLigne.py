@@ -9,6 +9,7 @@ nombreComptes=0
 nombreAutres=0
 typeElement="pseudogene"
 nomFichier = sys.argv[1]
+taille=0
 
 fichier = Files(nomFichier)
 toutesLignes=fichier.Lecture()
