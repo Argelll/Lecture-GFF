@@ -20,6 +20,7 @@ for ligne in toutesLignes :
     #listeGene.append(unGene)
   #except :
     #print ("pas cette ligne")
+  print ("\n")
     
 for genes in listeGene:
   print (genes)
