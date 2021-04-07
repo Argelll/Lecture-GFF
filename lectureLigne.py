@@ -4,15 +4,17 @@
 import sys
 from LectureFichier import *
 from ClassGene import *
-i=0
+
+nombrePseudogenes=0
+typeElement="pseudogene"
 nomFichier = sys.argv[1]
+
 fichier = Files(nomFichier)
-listeGene=[]
 toutesLignes=fichier.Lecture()
 for ligne in toutesLignes :
   position=ligne.split("\t")
   try:
-    if (position[2]=="pseudogene"):
+    if (position[2]==typeElement):
       i=i+1
       print (position[2])
   except:
