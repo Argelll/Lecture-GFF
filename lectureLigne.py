@@ -14,4 +14,4 @@ toutesLignes=fichier.Lecture()
 for ligne in toutesLignes :
   position=ligne.split("\t")
   if (position[2]=="pseudogene"):
-    print (ligne)
+    print (position[2])
