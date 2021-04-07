@@ -14,7 +14,7 @@ toutesLignes=fichier.Lecture()
 for ligne in toutesLignes :
   position=ligne.split("\t")
   try:
-    if (position[2]=="pseudogene"):
+    if (position[2]==typeElement):
       nombrePseudogenes=nombrePseudogenes+1
       print (position[2])
   except:
