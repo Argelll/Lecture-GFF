@@ -19,8 +19,9 @@ for ligne in toutesLignes :
       nombreComptes=nombreComptes+1
       print (position[2])
     else:
-      nombreTotal=nombreComptes+nombreAutres
+      nombreAutres=nombreAutres+nombreAutres
   except:
     pass
+  nombreTotal=nombreComptes+nombreAutres
 print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s sur "+str(nombreTotal)+" elements totaux." )
 
