@@ -3,7 +3,6 @@
 
 import sys
 from LectureFichier import *
-from ClassGene import *
 
 nombreComptes=0
 nombreAutres=0
