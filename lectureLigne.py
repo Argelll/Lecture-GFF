@@ -11,7 +11,7 @@ nomFichier = sys.argv[1]
 try:
   nomFichierEcriture = sys.argv[2]
 except:
-  nomFichierEcriture="numeros_d_accession"  
+  nomFichierEcriture="numeros_d_accession.txt"  
 taille=0
 
 fEcrit=open(nomFichierEcriture,"w")
@@ -22,7 +22,7 @@ for ligne in toutesLignes :
   try:
     if (position[2]==typeElement):
       nombreComptes=nombreComptes+1
-      fEcrit.write(position[0]\n)
+      fEcrit.write(position[0]+"\n")
   except:
     pass
 nombreTotal=nombreComptes+nombreAutres
