@@ -21,9 +21,6 @@ class Files(object):
     fichier=open(fp,"r")
     fichierEntier = fichier.read()
     fichierDecoupe=fichierEntier.split("\n")
-    f=open("marche.txt","w")
-    for ligne in fichierDecoupe:
-      f.write(ligne)
     return fichierDecoupe
     fichier.close()
     f.close()
