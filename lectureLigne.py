@@ -8,6 +8,10 @@ nombreComptes=0
 nombreAutres=0
 typeElement="pseudogene"
 nomFichier = sys.argv[1]
+try:
+  nomFichierEcriture = sys.argv[2]
+except:
+  nomFichierEcriture="numeros_d_accession"  
 taille=0
 
 fichier = Files(nomFichier)
@@ -19,8 +23,11 @@ for ligne in toutesLignes :
       nombreComptes=nombreComptes+1
       taille=int(position[4])-int(position[3])
       print(taille)
+      fEcrit=open(nomFichierEcriture,"w")
+      fichier.write(position[1])
   except:
     pass
 nombreTotal=nombreComptes+nombreAutres
 print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s")
+
 
