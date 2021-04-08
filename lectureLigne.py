@@ -22,7 +22,7 @@ for ligne in toutesLignes :
     if (position[2]==typeElement):
       nombreComptes=nombreComptes+1
       fEcrit=open(nomFichierEcriture,"w")
-      fichier.write(position[1])
+      fEcrit.write(position[0])
   except:
     pass
 nombreTotal=nombreComptes+nombreAutres
