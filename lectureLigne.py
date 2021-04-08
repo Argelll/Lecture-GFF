@@ -14,6 +14,7 @@ except:
   nomFichierEcriture="numeros_d_accession"  
 taille=0
 
+fEcrit=open(nomFichierEcriture,"w")
 fichier = Files(nomFichier)
 toutesLignes=fichier.Lecture()
 for ligne in toutesLignes :
@@ -21,11 +22,12 @@ for ligne in toutesLignes :
   try:
     if (position[2]==typeElement):
       nombreComptes=nombreComptes+1
-      fEcrit=open(nomFichierEcriture,"w")
+     
       fEcrit.write(position[0])
   except:
     pass
 nombreTotal=nombreComptes+nombreAutres
 print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s")
+fEcrit.close()
 
 
