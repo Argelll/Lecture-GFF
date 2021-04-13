@@ -23,7 +23,7 @@ for ligne in toutesLignes :
   try:
     if (position[2]==typeElement):
       print ("oui")
-      nombreComptes=nombreComptes+1
+      nombreComptes=nombreComptes+2
       informations=position[9].split(";")
       numAccession=informations[0].split(":")
       
