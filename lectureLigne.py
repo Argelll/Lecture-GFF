@@ -22,10 +22,11 @@ for ligne in toutesLignes :
   position=ligne.split("\t")
   try:
     if (position[2]==typeElement):
+      print ("oui")
       nombreComptes=nombreComptes+1
       informations=position[9].split(";")
       numAccession=informations[0].split(":")
-      print ("oui")
+      
       fEcrit.write("oui"+informations[1]+"/n")
       fEcrit.write(position[0]+"\n")
   except:
