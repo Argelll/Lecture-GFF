@@ -22,7 +22,10 @@ for ligne in toutesLignes :
   try:
     if (position[2]==typeElement):
       nombreComptes=nombreComptes+1
-      fEcrit.write(position[0]+"\n")
+      informations=position[9].split(";")
+      numAccession=informations[0].split(":")
+      fEcrit.write(informations[1])
+      #fEcrit.write(position[0]+"\n")
   except:
     pass
 nombreTotal=nombreComptes+nombreAutres
