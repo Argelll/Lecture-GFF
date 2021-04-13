@@ -26,7 +26,7 @@ for ligne in toutesLignes :
       informations=position[9].split(";")
       numAccession=informations[0].split(":")
       
-      fEcrit.write("oui"+informations[1]+"/n")
+      fEcrit.write(informations[1]+"/n")
       fEcrit.write(position[0]+"\n")
   except:
     pass
