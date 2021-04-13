@@ -25,7 +25,7 @@ for ligne in toutesLignes :
       informations=position[9].split(";")
       numAccession=informations[0].split(":")
       fEcrit.write(informations[1])
-      #fEcrit.write(position[0]+"\n")
+      fEcrit.write(position[0]+"\n")
   except:
     pass
 nombreTotal=nombreComptes+nombreAutres
