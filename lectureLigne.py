@@ -23,7 +23,7 @@ for ligne in toutesLignes :
   try:
     if (position[2]==typeElement):
       print ("oui")
-      nombreComptes=nombreComptes+2
+      nombreComptes=nombreComptes+1
       informations=position[9].split(";")
       numAccession=informations[0].split(":")
       
@@ -34,6 +34,5 @@ for ligne in toutesLignes :
 nombreTotal=nombreComptes+nombreAutres
 print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s")
 fEcrit.close()
-fichier.close()
 
 
