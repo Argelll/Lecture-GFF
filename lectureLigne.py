@@ -4,6 +4,7 @@
 import sys
 from LectureFichier import *
 
+taille=0
 nombreComptes=0
 nombreAutres=0
 typeElement="pseudogene"
@@ -12,7 +13,7 @@ try:
   nomFichierEcriture = sys.argv[2]
 except:
   nomFichierEcriture="numeros_d_accession.txt"  
-taille=0
+
 
 fEcrit=open(nomFichierEcriture,"w")
 fichier = Files(nomFichier)
@@ -24,6 +25,7 @@ for ligne in toutesLignes :
       nombreComptes=nombreComptes+1
       informations=position[9].split(";")
       numAccession=informations[0].split(":")
+      fEcrit.write("oui")
       fEcrit.write("oui"+informations[1]+"/n")
       fEcrit.write(position[0]+"\n")
   except:
@@ -31,5 +33,6 @@ for ligne in toutesLignes :
 nombreTotal=nombreComptes+nombreAutres
 print ("Il y a "+str(nombreComptes)+" "+str(typeElement)+"s")
 fEcrit.close()
+fichier.close()
 
 
